@@ -1,8 +1,9 @@
+import { hover } from "@testing-library/user-event/dist/hover"
 
 const Button = (props)=>{
     return(
         <div>
-            <button style={{color:`${props.color}`, margin:`${props.margin}`, marginTop:`${props.top}`, width:`${props.width}`, height:`${props.height}`, borderRadius:`${props.radius}`}}>{props.name}</button>
+            <button style={{backgroundColor:`${props.color}`, color:"white", margin:`${props.margin}`, marginTop:`${props.top}`, padding:"7px", width:`${props.width}`, height:`${props.height}`, borderRadius:"5px", cursor:"pointer", border:"0px" }}>{props.name}</button>
         </div>
     )
 }

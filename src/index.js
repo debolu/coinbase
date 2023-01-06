@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./header";
-import Portfolio from "./hero";
+import Portfolio from "./porfolio";
 import MobilePics from "./mobileimages";
 import Table from "./table";
+import Earncrypto from "./earncrypto";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Portfolio />
       <MobilePics />
       <Table />
+      <Earncrypto />
     </div>
   );
 };

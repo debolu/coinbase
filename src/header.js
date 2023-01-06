@@ -22,11 +22,8 @@ const header = () => {
                 </nav>
 
                 <div id="signIn">
-                    <div className=""><button type="submit" href="#">Get Started</button></div>
+                    <div className=""><Button type="submit" name="Get started" href="#" color="blue"></Button></div>
                     <div><a>Sign In</a></div>
-                    {/* <Button name='Sign in ' color='blue' top='50px' width='100px' radius='50%' />
-                    <Button name='Get ready ' color='red' top='50px' width='50px' radius='30%' /> */}
-
                 </div>
             </header>
         </div >
