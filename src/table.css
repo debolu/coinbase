@@ -1,0 +1,14 @@
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+.tableBody {
+    max-width: 90%;
+    margin: 40px;
+    margin-left: 5%;
+    padding: 10px;
+}

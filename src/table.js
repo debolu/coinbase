@@ -4,39 +4,40 @@ import Btc from "./images/btc.png";
 import Eth from "./images/eth.png";
 import Cardano from "./images/cardano.png";
 import Solana from "./images/solana.png";
+import './table.css'
 
 const data = [
   {
     id: 1,
-    logo: <img src={Btc} alt="Bitcoin" width='20%'></img>,
+    logo: <img style={{width:'35px'}} src={Btc} alt="Bitcoin" width='20%'></img>,
     name: "Bitcoin",
-    acronym: "Btc",
+    acronym: "BTC",
     price: "NGN 7,984,839.03",
-    change: "-1.54%"
+    change: -1.54
   },
   {
     id: 2,
-    logo: <img src={Eth} alt="Etherium" width='20%'></img>,
+    logo: <img style={{width:'35px'}} src={Eth} alt="Etherium" width='20%'></img>,
     name: "Etherium",
-    acronym: "Eth",
+    acronym: "ETH",
     price: "NGN 984,839.03",
-    change: "-2.24%"
+    change: -2.24
   },
   {
     id: 3,
-    logo: <img src={Cardano} alt="Cardano" width='20%'></img>,
+    logo: <img style={{width:'35px'}} src={Cardano} alt="Cardano" width='20%'></img>,
     name: "Cardano",
     acronym: "ADA",
     price: "NGN 106.03",
-    change: "-2.57%"
+    change: -2.57
   },
   {
     id: 4,
-    logo: <img src={Solana} alt="Solana" width='20%'></img>,
+    logo: <img style={{width:'35px'}} src={Solana} alt="Solana" width='20%'></img>,
     name: "Solana",
     acronym: "SOL",
     price: "NGN 4,839.03",
-    change: "+1.54%"
+    change: +1.54
   }
 ];
 
@@ -46,28 +47,29 @@ const columns = [
   {
       name: "#",
       selector: (row) => row.id,
-      width: '150px',
+      width: '100px',
       center: true
   },
   {
       name: "Name",
-      selector: (row)=> `${row.logo} ${row.name} ${row.acronym}`,
-      width: '450px'
+      selector: (row)=> <div  style={{display:'flex', alignItems:'center', fontWeight:'bold'}}>{row.logo} <span style={{marginLeft:'30px', fontSize:'15px', width:'50px'}}>{row.name}</span> <p style={{marginLeft:'50px', color:'gray', fontSize:'18px'}}>{row.acronym}</p>
+      </div>,
+      width: '500px'
   },
   {
       name: "Price",
-      selector: (row) => row.price,
-      width: '300px'
+      selector: (row) => <span style={{fontSize:'15px', fontWeight:"bolder"}}>{row.price}</span>,
+      width: '200px'
   },
   {
       name: "Change",
-      selector: (row) => row.change,
+      selector: (row) => <div className={row.change < 0 ? "red" : "green"}>{row.change} %</div>,
       width: '100px'
   },
   {
       name: "Chart",
       selector: (row) => [],
-      width: "50px"
+      width: "70px"
   },
   {
       name: "Trade",
@@ -76,24 +78,27 @@ const columns = [
   }
 ];
 
+const conditionalRowStyles = [
+  {
+    when: (row) => row.change !== 1,
+    style: row => ({ color: row.isSpecial ? 'green' : 'red' }),
+  }
+];
+
 const customStyles = {
   rows: {
       style: {
           maxHeight: '50px', // override the row height
-          Width: '150px'
+          width: "100%"
       },
   },
 
   columns: {
     style: {
-      Width: "10px"
+      Width: "100%",
+      margin:'50px'
     }
   },
-
-  // when: columns => columns.name === "chart",
-  // s: "10px"
-  //   }},tyles: {
-  //   width
   
   headCells: {
       style: {
@@ -114,10 +119,11 @@ const Table = () => {
   return (
         <div>
             <DataTable 
+            className={"tableBody"}
             columns={columns}
             data={data}
             customStyles={customStyles}
-            width="100px"
+            // conditionalRowStyles={conditionalRowStyles}
             highlightOnHover= {true}
             />
         </div>
