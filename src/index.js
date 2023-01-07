@@ -2,18 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./header";
 import Portfolio from "./porfolio";
-import MobilePics from "./mobileimages";
 import Table from "./table";
 import Earncrypto from "./earncrypto";
 
 const App = () => {
   return (
-    <div>
+    <div style={{fontFamily:'sans-serif'}}>
       <Header />
-      <Portfolio />
-      <MobilePics />
-      <Table />
-      <Earncrypto />
+      <div style={{margin:'150px'}}>
+        <Portfolio />
+        <Table style={{}}/>
+        <Earncrypto />
+      </div>
     </div>
   );
 };
