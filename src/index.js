@@ -7,11 +7,13 @@ import Earncrypto from "./earncrypto";
 
 const App = () => {
   return (
-    <div style={{fontFamily:'sans-serif'}}>
+    <div style={{ fontFamily: "sans-serif" }}>
       <Header />
-      <div style={{margin:'150px'}}>
+      <div style={{ margin: "10%", marginBottom:'0%' }}>
         <Portfolio />
-        <Table style={{}}/>
+      </div>
+      <Table />
+      <div style={{ margin: "10%" }}>
         <Earncrypto />
       </div>
     </div>

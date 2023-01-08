@@ -78,13 +78,6 @@ const columns = [
   }
 ];
 
-const conditionalRowStyles = [
-  {
-    when: (row) => row.change !== 1,
-    style: row => ({ color: row.isSpecial ? 'green' : 'red' }),
-  }
-];
-
 const customStyles = {
   rows: {
       style: {
@@ -117,14 +110,14 @@ const customStyles = {
 const Table = () => {
 
   return (
-        <div>
+        <div style={{width:'90%', marginLeft:'5%', position:'relative'}}>
             <DataTable 
             className={"tableBody"}
             columns={columns}
             data={data}
             customStyles={customStyles}
-            // conditionalRowStyles={conditionalRowStyles}
             highlightOnHover= {true}
+            pointerOnHover={true}
             />
         </div>
         );

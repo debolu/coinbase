@@ -28,7 +28,7 @@ const header = () => {
             style={{
               display: "inline-flex",
               listStyleType: "none",
-              width: "800px",
+              width: "750px",
               justifyContent: "center",
               marginRight: "70px",
             }}
@@ -52,16 +52,17 @@ const header = () => {
             margin: "10px",
           }}
         >
-          <span style={{ marginLeft: "20px", fontSize: "15px" }}>
-            <a href="#">Sign In</a>
-          </span>
-
           <Button
             type="submit"
             name="Get started"
             href="#"
             color="blue"
           ></Button>
+          
+          <span style={{ marginRight: "20px", fontSize: "15px" }}>
+            <a href="#">Sign In</a>
+          </span>
+
         </div>
       </header>
     </div>
