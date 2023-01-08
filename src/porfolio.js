@@ -9,7 +9,7 @@ const Portfolio = () => {
       <div style={{width:'50%'}}>
         <span
           style={{
-            color: "blue",
+            color: "rgb(10, 70, 228)",
             fontWeight: "bold",
             fontSize: "15px",
             justifyItems: "center",
@@ -25,7 +25,7 @@ const Portfolio = () => {
         ,
         <div>
           <h1 style={{marginTop:'15px', fontSize:'60px', lineHeight:'60px', width:'80%'}}>Jump start your crypto portfolio</h1>
-          <p style={{fontWeight:'bold', fontSize:'20px', marginTop:'20px'}}>
+          <p style={{fontWeight:'normal', fontSize:'20px', marginTop:'20px'}}>
             Coinbase is the easiest place to buy and sell cryptocurrency. Sign
             up and get started today.
           </p>
@@ -35,7 +35,7 @@ const Portfolio = () => {
           <input type={"email"} placeholder={"Email address"} style={{width:'100%', height:'70px', padding:'20px', outline: 'none', marginRight:'10px'}}></input>
           <Button
             name="Get Started"
-            color="Blue"
+            color="rgb(10, 70, 228)"
             width="170px"
             height="70px"
             radius="10px"

@@ -13,7 +13,7 @@ const App = () => {
         <Portfolio />
       </div>
       <Table />
-      <div style={{ margin: "10%" }}>
+      <div style={{ margin: "10%",marginTop:'50px' }}>
         <Earncrypto />
       </div>
     </div>

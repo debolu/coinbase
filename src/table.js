@@ -41,7 +41,7 @@ const data = [
   }
 ];
 
-const payButton = <Button name="Buy" width="50px" height="30px"  color="green" radius="5px"></Button>;
+const payButton = <Button name="Buy" width="50px" height="30px"  color="rgb( 9,133,81)" radius="5px"></Button>;
 
 const columns = [
   {
@@ -52,19 +52,20 @@ const columns = [
   },
   {
       name: "Name",
-      selector: (row)=> <div  style={{display:'flex', alignItems:'center', fontWeight:'bold'}}>{row.logo} <span style={{marginLeft:'30px', fontSize:'15px', width:'50px'}}>{row.name}</span> <p style={{marginLeft:'50px', color:'gray', fontSize:'18px'}}>{row.acronym}</p>
+      selector: (row)=> <div  style={{display:'flex', alignItems:'center'}}>{row.logo} <span style={{marginLeft:'30px', fontSize:'17px', width:'50px'}}>{row.name}</span> <p style={{marginLeft:'50px', color:'gray', fontSize:'18px'}}>{row.acronym}</p>
       </div>,
       width: '500px'
   },
   {
       name: "Price",
-      selector: (row) => <span style={{fontSize:'15px', fontWeight:"bolder"}}>{row.price}</span>,
+      selector: (row) => <span style={{fontSize:'17px'}}>{row.price}</span>,
       width: '200px'
   },
   {
       name: "Change",
-      selector: (row) => <div className={row.change < 0 ? "red" : "green"}>{row.change} %</div>,
+      selector: (row) => <div style={{fontSize:'17px'}}className={row.change < 0 ? "red" : "green"}>{row.change} %</div>,
       width: '100px'
+      
   },
   {
       name: "Chart",

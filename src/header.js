@@ -56,7 +56,7 @@ const header = () => {
             type="submit"
             name="Get started"
             href="#"
-            color="blue"
+            color="rgb(10, 70, 228)"
           ></Button>
           
           <span style={{ marginRight: "20px", fontSize: "15px" }}>
