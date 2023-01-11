@@ -7,6 +7,9 @@ import Manage from "./images/manage.jpg";
 import Recurring from "./images/recurring.jpg";
 import Vault from "./images/vault.jpg";
 import Mobileapps from "./images/mobileapps.jpg";
+import Secure from "./images/secure.jpg";
+import Insurance from "./images/insurance.jpg";
+import Industry from "./images/industry.jpg";
 
 const Earncrypto = () => {
   const grt = (
@@ -68,11 +71,35 @@ const Earncrypto = () => {
         header: "Mobile apps",
         subheader: "Stay on top of the markets with the Coinbase app for Android or iOS."
     },
+  ];
+
+  const coinbasepros2 = [
+    {
+        id: 1,
+        image: Secure,
+        header: "Secure storage",
+        subheader: "We store the vast majority of the digital assets in secure offline storage.",
+        link: "Learn how Coinbase keeps your funds safe and secure >"
+    },
+    {
+        id: 2,
+        image: Insurance,
+        header: "Protected by insurance",
+        subheader: "Coinbase maintains crypto insurance and all USD cash balances are covered by FDIC insurance, up to a maximum of $250,000.",
+        link: "Learn how your crypto is covered by our insurance policy >"
+    },
+    {
+        id: 3,
+        image: Industry,
+        header: "Industry best practices",
+        subheader: "Coinbase supports a variety of the most popular digital currencies.",
+        link: "Learn how we implement industry best practices for account security >"
+    }
   ]
 
   return (
     <div>
-      <div style={{ display: "flex" }}>
+      <div style={{display: "flex"}}>
         <div style={{ width: "45%" }}>
           <h1 style={{ width: "90%" }}>Earn up to $10 worth of crypto</h1>
           <p style={{ width: "80%" }}>
@@ -132,11 +159,11 @@ const Earncrypto = () => {
           </p>
         </div>
         <div style={{display:'inline-flex', flexDirection:'row-reverse'}}>
-          <div style={{margin:'20px'}}>{Trend}</div>
+          <div style={{margin:'20px', width:'60%'}}><img src={Trend} alt="A trend chart of coinbase app" style={{width:'110%', height:'450px'}}></img></div>
           <div style={{width:'40%'}}>
                 {coinbasePros.map((pros)=>(
                     <div style={{display:'inline-flex', marginTop:'10px', alignItems:'center'}}>
-                        <img src={pros.image} style={{width:'60px', margin:'20px'}}></img>
+                        <img alt="" src={pros.image} style={{width:'60px', margin:'20px'}}></img>
                         <div style={{marginLeft:'10px'}}>
                             <h3>{pros.header}</h3>
                             <p style={{color:'gray', fontSize:'15px'}}>{pros.subheader}</p>
@@ -145,6 +172,27 @@ const Earncrypto = () => {
                 ))}
           </div>
         </div>
+      </div>
+      <div style={{position:'relative', height:'200px', top:'100px', marginLeft:'-150px', width:'130%'}}><hr style={{height:'1px', backgroundColor:'rgb(225, 225, 225)', border:'none'}}></hr></div>
+      <div>
+        <div style={{display:'grid', width:'100%', padding:'20px', marginBottom:'70px'}}>
+        <h2 style={{fontSize:'35px', justifySelf:'center'}}>The most trusted cryptocurrency platform</h2>
+          <p style={{color:'gray', justifySelf:'center'}}>
+          Here are a few reasons why you should choose Coinbase
+          </p>
+        </div>
+        <div style={{width:'100%', display:'inline-flex', justifyItems:'center'}}>
+                {coinbasepros2.map((pros)=>(
+                    <div style={{display:'flex',flexDirection:'column', width:'100%', justifyItems:'center', marginTop:'10px', marginBottom:'50px', alignItems:'center'}}>
+                        <img alt="" src={pros.image} style={{width:'85px', height:'85px', justifySelf:'center'}}></img>
+                        <div style={{padding:'20px', textAlign:'center', width:'100%'}}>
+                            <h3 style={{ padding:'10px'}}>{pros.header}</h3>
+                            <p style={{color:'gray', fontSize:'15px', height:'100px'}}>{pros.subheader}</p>
+                            <a href="#" style={{justifySelf:'center'}}>{pros.link}</a>
+                        </div>
+                    </div>
+                ))}
+          </div>      
       </div>
     </div>
   );

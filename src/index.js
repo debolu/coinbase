@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div style={{ fontFamily: "sans-serif" }}>
       <Header />
-      <div style={{ margin: "10%", marginBottom:'0%' }}>
+      <div style={{ margin: "10%", marginBottom:'0%', marginTop:'15%' }}>
         <Portfolio />
       </div>
       <Table />

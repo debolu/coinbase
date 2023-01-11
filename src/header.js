@@ -15,7 +15,7 @@ const Nav = [
 const header = () => {
   return (
     <div>
-      <header style={{ display: "inline-flex", paddingTop: "8px" }}>
+      <header style={{position:'fixed', top:'0px', zIndex:'1', backgroundColor:'white', display: "inline-flex", paddingTop: "8px", boxShadow:'1px 1px 5px 3px rgb(245, 245, 245)', width:'100%'}}>
         <div id="logo-Wrapper" style={{ width: "150px", marginRight: "10px" }}>
           <img
             src={Logo}
@@ -34,7 +34,7 @@ const header = () => {
             }}
           >
             {Nav.map((data) => (
-              <li style={{ marginLeft: "28px", fontWeight: "bold" }}>
+              <li style={{ marginLeft: "28px", fontSize:'0.85em', fontWeight: "bold" }}>
                 <a href={data.link} style={{ color: "black" }}>
                   {data.name}
                 </a>
