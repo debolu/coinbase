@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Logo from "./images/applogo.jpg";
 import Button from "./Components/Button";
 
@@ -60,7 +59,7 @@ const header = () => {
           ></Button>
           
           <span style={{ marginRight: "20px", fontSize: "15px" }}>
-            <a href="#">Sign In</a>
+            <span>Sign In</span>
           </span>
 
         </div>

@@ -137,8 +137,7 @@ const Earncrypto = () => {
               </span>
             </div>
           ))}
-          <a
-            href="#"
+          <span
             style={{
               color: "rgb( 0,82,255)",
               fontSize: "15px",
@@ -146,8 +145,8 @@ const Earncrypto = () => {
             }}
           >
             {" "}
-            View more >
-          </a>
+            View more
+          </span>
         </div>
       </div>
       <div style={{position:'relative', top:'70px'}}>
@@ -188,7 +187,7 @@ const Earncrypto = () => {
                         <div style={{padding:'20px', textAlign:'center', width:'100%'}}>
                             <h3 style={{ padding:'10px'}}>{pros.header}</h3>
                             <p style={{color:'gray', fontSize:'15px', height:'100px'}}>{pros.subheader}</p>
-                            <a href="#" style={{justifySelf:'center'}}>{pros.link}</a>
+                            <span style={{justifySelf:'center'}}>{pros.link}</span>
                         </div>
                     </div>
                 ))}
