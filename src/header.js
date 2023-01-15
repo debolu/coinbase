@@ -14,12 +14,12 @@ const Nav = [
 const header = () => {
   return (
     <div>
-      <header style={{position:'fixed', top:'0px', zIndex:'1', backgroundColor:'white', display: "inline-flex", paddingTop: "8px", boxShadow:'1px 1px 5px 3px rgb(245, 245, 245)', width:'100%'}}>
+      <header style={{position:'fixed', top:'0px', zIndex:'1', backgroundColor:'white', display: "inline-flex", paddingTop: "10px", boxShadow:'1px 1px 5px 3px rgb(245, 245, 245)', width:'100%'}}>
         <div id="logo-Wrapper" style={{ width: "150px", marginRight: "10px" }}>
           <img
             src={Logo}
             alt="The coinbase logo"
-            style={{ width: "80%", padding: "10px", marginLeft: "60px" }}
+            style={{ width: "90%", padding: "10px", marginLeft: "60px" }}
           ></img>
         </div>
         <nav className="mainNav">
@@ -27,13 +27,13 @@ const header = () => {
             style={{
               display: "inline-flex",
               listStyleType: "none",
-              width: "750px",
+              width: "850px",
               justifyContent: "center",
               marginRight: "70px",
             }}
           >
             {Nav.map((data) => (
-              <li style={{ marginLeft: "28px", fontSize:'0.85em', fontWeight: "bold" }}>
+              <li style={{ marginLeft: "35px", fontSize:'0.85em', fontWeight: "bold" }}>
                 <a href={data.link} style={{ color: "black" }}>
                   {data.name}
                 </a>
@@ -56,6 +56,7 @@ const header = () => {
             name="Get started"
             href="#"
             color="rgb(10, 70, 228)"
+            width='120%'
           ></Button>
           
           <span style={{ marginRight: "20px", fontSize: "15px" }}>

@@ -145,7 +145,7 @@ const Earncrypto = () => {
             }}
           >
             {" "}
-            View more
+            View more >
           </span>
         </div>
       </div>
@@ -187,7 +187,7 @@ const Earncrypto = () => {
                         <div style={{padding:'20px', textAlign:'center', width:'100%'}}>
                             <h3 style={{ padding:'10px'}}>{pros.header}</h3>
                             <p style={{color:'gray', fontSize:'15px', height:'100px'}}>{pros.subheader}</p>
-                            <span style={{justifySelf:'center'}}>{pros.link}</span>
+                            <span style={{justifySelf:'center', color:'blueviolet', cursor:'pointer'}}>{pros.link}</span>
                         </div>
                     </div>
                 ))}
