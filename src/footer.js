@@ -4,7 +4,7 @@ import Button from "./Components/Button";
 const Footer = () => {
   return (
     <div>
-      <div style={{ width: "100%", display:'flex', backgroundColor:'rgb(var(--gray100))' }}>
+      <div style={{ width: "100%", display:'flex', backgroundColor:'' }}>
         <div style={{ width: "45%" }}>
           <h1 style={{ width: "90%" }}>Earn up to $10 worth of crypto</h1>
           <p style={{ width: "80%" }}>
@@ -19,7 +19,7 @@ const Footer = () => {
             style={{ marginLeft: "40px" }}
           ></Button>
         </div>
-        <img src={FooterPic}></img>
+        <img alt="" src={FooterPic}></img>
       </div>
     </div>
   );
