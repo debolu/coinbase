@@ -4,6 +4,8 @@ import Header from "./header";
 import Portfolio from "./porfolio";
 import Table from "./table";
 import Earncrypto from "./earncrypto";
+import Stats from "./stats";
+import Footer from "./footer";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <div style={{ margin: "10%",marginTop:'50px' }}>
         <Earncrypto />
       </div>
+      <Stats />
+      <Footer />
     </div>
   );
 };

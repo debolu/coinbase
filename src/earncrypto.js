@@ -100,6 +100,7 @@ const Earncrypto = () => {
   return (
     <div>
       <div style={{display: "flex"}}>
+        {/* Find out how to reuse this component in another component file */}
         <div style={{ width: "45%" }}>
           <h1 style={{ width: "90%" }}>Earn up to $10 worth of crypto</h1>
           <p style={{ width: "80%" }}>
@@ -113,9 +114,9 @@ const Earncrypto = () => {
             height="40px"
             style={{ marginLeft: "40px" }}
           >
-            Start Earning
           </Button>
         </div>
+        {/* Reuse component to this point */}
 
         <div style={{ width: "45%", marginLeft: "10%" }}>
           {viewrates.map((rates) => (
@@ -145,7 +146,7 @@ const Earncrypto = () => {
             }}
           >
             {" "}
-            View more >
+            View more {'>'}
           </span>
         </div>
       </div>
@@ -182,12 +183,12 @@ const Earncrypto = () => {
         </div>
         <div style={{width:'100%', display:'inline-flex', justifyItems:'center'}}>
                 {coinbasepros2.map((pros)=>(
-                    <div style={{display:'flex',flexDirection:'column', width:'100%', justifyItems:'center', marginTop:'10px', marginBottom:'50px', alignItems:'center'}}>
+                    <div style={{display:'flex', flexDirection:'column', width:'100%', justifyItems:'center', marginTop:'10px', alignItems:'center'}}>
                         <img alt="" src={pros.image} style={{width:'85px', height:'85px', justifySelf:'center'}}></img>
                         <div style={{padding:'20px', textAlign:'center', width:'100%'}}>
                             <h3 style={{ padding:'10px'}}>{pros.header}</h3>
                             <p style={{color:'gray', fontSize:'15px', height:'100px'}}>{pros.subheader}</p>
-                            <span style={{justifySelf:'center', color:'blueviolet', cursor:'pointer'}}>{pros.link}</span>
+                            <a href={pros.link} style={{justifySelf:'center', color:'blue', cursor:'pointer'}}>{pros.link}</a>
                         </div>
                     </div>
                 ))}
