@@ -101,9 +101,9 @@ const Earncrypto = () => {
     <div>
       <div style={{display: "flex"}}>
         {/* Find out how to reuse this component in another component file */}
-        <div style={{ width: "45%" }}>
-          <h1 style={{ width: "90%" }}>Earn up to $10 worth of crypto</h1>
-          <p style={{ width: "80%" }}>
+        <div style={{ width: "40%" }}>
+          <div style={{width:'80%', fontWeight:'bold', fontSize:'30px', lineHeight:'50px' }}>Earn up to $10 worth of crypto</div>
+          <p style={{ width: "80%", marginTop:'20px', fontSize:'15px' }}>
             Discover how specific cryptocurrencies work — and get a bit of each
             crypto to try out for yourself.
           </p>
