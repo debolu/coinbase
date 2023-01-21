@@ -40,18 +40,18 @@ const Stats = () => {
         </div>
 
         {/* There is further need to DRY up this section */}
-        <div style={{display:'flex', width:'100%', alignItems:'center', padding:'50px', paddingTop:'0px'}}>
-            <figure>
+        <div style={{display:'flex', width:'100%', alignItems:'center', padding:'100px', paddingTop:'0px'}}>
+            <figure style={{width:'400px', margin:'0px' }}>
                 <img alt="" src={Create} style={{width:'100px', marginBottom:'10px'}}></img>
                 <figcaption style={{fontWeight:'bold', fontSize:'20px'}}>Create an account</figcaption>
             </figure>
             <hr style={{width:'150px'}}></hr>
-            <figure>
+            <figure style={{width:'400px', margin:'0px' }}>
                 <img alt="" src={Link} style={{width:'100px', marginBottom:'10px'}}></img>
                 <figcaption style={{fontWeight:'bold', fontSize:'20px'}}>Link your bank account</figcaption>
             </figure>
-            <hr style={{width:'200px'}}></hr>
-            <figure>
+            <hr style={{width:'150px'}}></hr>
+            <figure style={{width:'400px', margin:'0px' }}>
                 <img alt="" src={Startbuying} style={{width:'100px', marginBottom:'10px'}}></img>
                 <figcaption style={{fontWeight:'bold', fontSize:'20px'}}>Start buying &selling</figcaption>
             </figure>
