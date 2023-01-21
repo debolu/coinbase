@@ -2,56 +2,56 @@ import FooterPic from "./images/earth.jpg";
 import Button from "./Components/Button";
 import Logo from "./images/applogo.jpg";
 // import ReactLanguageSelect from "react-languages-select";
-import 'react-languages-select/css/react-languages-select.css';
+// import 'react-languages-select/css/react-languages-select.css';
 
 const Company = [
   {
     id: 1,
-    link: <a href="#">About</a>,
+    link: <span href="#">About</span>,
   },
   {
     id: 2,
-    link: <a href="#">Career</a>
+    link: <span href="#">Career</span>
   },
   {
     id: 3,
-    link: <a href="#">Affiliates</a>
+    link: <span href="#">Affiliates</span>
   },
   {
     id: 4,
-    link: <a href="#">Blog</a>
+    link: <span href="#">Blog</span>
   },
   {
     id: 5,
-    link: <a href="#">Press</a>
+    link: <span href="#">Press</span>
   },
   {
     id: 6,
-    link: <a href="#">Security</a>
+    link: <span href="#">Security</span>
   },
   {
     id: 7,
-    link: <a href="#">Investors</a>
+    link: <span href="#">Investors</span>
   },
   {
     id: 8,
-    link: <a href="#">Vendors</a>
+    link: <span href="#">Vendors</span>
   },
   {
     id: 9,
-    link: <a href="#">Legal & privacy</a>
+    link: <span href="#">Legal & privacy</span>
   },
   {
     id: 10,
-    link: <a href="#">Cookie policy</a>
+    link: <span href="#">Cookie policy</span>
   },
   {
     id: 11,
-    link: <a href="#">Cookie preferences</a>
+    link: <span href="#">Cookie preferences</span>
   },
   {
     id: 12,
-    link: <a href="#">Digital asset disclosure</a>
+    link: <span href="#">Digital asset disclosure</span>
   },
 ]
 
@@ -59,82 +59,82 @@ const Learn= [
   
   {
     id: 1,
-    link: <a href="#">Ethereum Merge</a>
+    link: <span href="#">Ethereum Merge</span>
   },
   {
     id: 2,
-    link: <a href="#">Browse crypto prices</a>
+    link: <span href="#">Browse crypto prices</span>
   },
   {
     id: 3,
-    link: <a href="#">Coinbase Bytes newsletter</a>
+    link: <span href="#">Coinbase Bytes newsletter</span>
   },
   {
     id: 4,
-    link: <a href="#">Crypto basics</a>
+    link: <span href="#">Crypto basics</span>
   },
   {
     id: 5,
-    link: <a href="#">Tips & tutorials</a>
+    link: <span href="#">Tips & tutorials</span>
   },
   {
     id: 6,
-    link: <a href="#">Market updates</a>
+    link: <span href="#">Market updates</span>
   },
   {
     id: 7,
-    link: <a href="#">What is Bitcoin? </a>
+    link: <span href="#">What is Bitcoin? </span>
   },
   {
     id: 8,
-    link: <a href="#">What is crypto?</a>
+    link: <span href="#">What is crypto?</span>
   },
   {
     id: 9,
-    link: <a href="#">What is a blockchain?</a>
+    link: <span href="#">What is a blockchain?</span>
   },
   {
     id: 10,
-    link: <a href="#">How to set up a crypto wallet</a>
+    link: <span href="#">How to set up a crypto wallet</span>
   },
   {
     id: 11,
-    link: <a href="#">How to send crypto</a>
+    link: <span href="#">How to send crypto</span>
   },
   {
     id: 12,
-    link: <a href="#">Taxes</a>
+    link: <span href="#">Taxes</span>
   },
 ]
 
 const Individuals= [
   {
     id: 1,
-    link: <a href="#">Buy & sell</a>
+    link: <span href="#">Buy & sell</span>
   },
   {
     id: 2,
-    link: <a href="#">Earn free crypto</a>
+    link: <span href="#">Earn free crypto</span>
   },
   {
     id: 3,
-    link: <a href="#">Wallet</a>
+    link: <span href="#">Wallet</span>
   },
   {
     id: 4,
-    link: <a href="#">NFT</a>
+    link: <span href="#">NFT</span>
   },
   {
     id: 5,
-    link: <a href="#">Card</a>
+    link: <span href="#">Card</span>
   },
   {
     id: 6,
-    link: <a href="#">Derivatives</a>
+    link: <span href="#">Derivatives</span>
   },
   {
     id: 7,
-    link: <a href="#">Coinbase One</a>
+    link: <span href="#">Coinbase One</span>
   },
 ]
 
@@ -142,105 +142,105 @@ const Businesses= [
   
   {
     id: 1,
-    link: <a href="#">Institutional</a>
+    link: <span href="#">Institutional</span>
   },
   {
     id: 2,
-    link: <a href="#">Prime</a>
+    link: <span href="#">Prime</span>
   },
   {
     id: 3,
-    link: <a href="#">Asset Hub</a>
+    link: <span href="#">Asset Hub</span>
   },
   {
     id: 4,
-    link: <a href="#">Commerce</a>
+    link: <span href="#">Commerce</span>
   },
 ]
 
 const Developers= [
   {
     id: 1,
-    link: <a href="#">Cloud</a>
+    link: <span href="#">Cloud</span>
   },
   {
     id: 2,
-    link: <a href="#">Wallet SDK</a>
+    link: <span href="#">Wallet SDK</span>
   },
   {
     id: 3,
-    link: <a href="#">Coinbase Pay SDK</a>
+    link: <span href="#">Coinbase Pay SDK</span>
   },
   {
     id: 4,
-    link: <a href="#">Node</a>
+    link: <span href="#">Node</span>
   },
   {
     id: 5,
-    link: <a href="#">Commerce</a>
+    link: <span href="#">Commerce</span>
   },
   {
     id: 6,
-    link: <a href="#">Exchange & Pro</a>
+    link: <span href="#">Exchange & Pro</span>
   },
   {
     id: 7,
-    link: <a href="#">Sign in with Coinbase</a>
+    link: <span href="#">Sign in with Coinbase</span>
   },
   {
     id: 8,
-    link: <a href="#">Rosetta</a>
+    link: <span href="#">Rosetta</span>
   },
   {
     id: 9,
-    link: <a href="#">Participate</a>
+    link: <span href="#">Participate</span>
   },
   {
     id: 10,
-    link: <a href="#">Prime API</a>
+    link: <span href="#">Prime API</span>
   },
 ]
 
 const Support= [
   {
     id: 1,
-    link: <a href="#">Help center</a>
+    link: <span href="#">Help center</span>
   },
   {
     id: 2,
-    link: <a href="#">Contact us</a>
+    link: <span href="#">Contact us</span>
   },
   {
     id: 3,
-    link: <a href="#">Create account</a>
+    link: <span href="#">Create account</span>
   },
   {
     id: 4,
-    link: <a href="#">ID verification</a>
+    link: <span href="#">ID verification</span>
   },
   {
     id: 5,
-    link: <a href="#">Account information</a>
+    link: <span href="#">Account information</span>
   },
   {
     id: 6,
-    link: <a href="#">Payment methods</a>
+    link: <span href="#">Payment methods</span>
   },
   {
     id: 7,
-    link: <a href="#">Account access</a>
+    link: <span href="#">Account access</span>
   },
   {
     id: 8,
-    link: <a href="#">Supported crypto</a>
+    link: <span href="#">Supported crypto</span>
   },
   {
     id: 9,
-    link: <a href="#">Supported countries</a>
+    link: <span href="#">Supported countries</span>
   },
   {
     id: 10,
-    link: <a href="#">Status</a>
+    link: <span href="#">Status</span>
   },
 ]
 
@@ -348,23 +348,23 @@ const Footer = () => {
 
 <div style={{marginBottom:'40px', marginRight:'150px', }}>
   <h4>Company</h4>
-  <ul style={{listStyleType:'none', padding:'0px', margin:'0px'}}>{Company.map((list)=>(<li style={{marginTop:'3px'}}>{list.link}</li>))}</ul>
+  <ul style={{listStyleType:'none', padding:'0px', margin:'0px', color:'gray'}}>{Company.map((list)=>(<li style={{marginTop:'3px', cursor:'pointer'}}>{list.link}</li>))}</ul>
 </div>
 <div style={{marginBottom:'40px', marginRight:'150px'}}>
   <h4>Learn</h4>
-  <ul style={{listStyleType:'none', padding:'0px', margin:'0px'}}>{Learn.map((list)=>(<li style={{marginTop:'3px'}}>{list.link}</li>))}</ul>
+  <ul style={{listStyleType:'none', padding:'0px', margin:'0px', color:'gray'}}>{Learn.map((list)=>(<li style={{marginTop:'3px', cursor:'pointer'}}>{list.link}</li>))}</ul>
 </div><div style={{marginBottom:'40px', marginRight:'150px'}}>
   <h4>Individuals</h4>
-  <ul style={{listStyleType:'none', padding:'0px', margin:'0px'}}>{Individuals.map((list)=>(<li style={{marginTop:'3px'}}>{list.link}</li>))}</ul>
+  <ul style={{listStyleType:'none', padding:'0px', margin:'0px', color:'gray'}}>{Individuals.map((list)=>(<li style={{marginTop:'3px', cursor:'pointer'}}>{list.link}</li>))}</ul>
 </div><div style={{marginBottom:'40px', marginRight:'150px'}}>
   <h4>Businesses</h4>
-  <ul style={{listStyleType:'none', padding:'0px', margin:'0px'}}>{Businesses.map((list)=>(<li style={{marginTop:'3px'}}>{list.link}</li>))}</ul>
+  <ul style={{listStyleType:'none', padding:'0px', margin:'0px', color:'gray'}}>{Businesses.map((list)=>(<li style={{marginTop:'3px', cursor:'pointer'}}>{list.link}</li>))}</ul>
 </div><div style={{marginBottom:'40px', marginRight:'150px'}}>
   <h4>Developers</h4>
-  <ul style={{listStyleType:'none', padding:'0px', margin:'0px'}}>{Developers.map((list)=>(<li style={{marginTop:'3px'}}>{list.link}</li>))}</ul>
+  <ul style={{listStyleType:'none', padding:'0px', margin:'0px', color:'gray'}}>{Developers.map((list)=>(<li style={{marginTop:'3px', cursor:'pointer'}}>{list.link}</li>))}</ul>
 </div><div style={{marginBottom:'40px', marginRight:'150px'}}>
   <h4>Support</h4>
-  <ul style={{listStyleType:'none', padding:'0px', margin:'0px'}}>{Support.map((list)=>(<li style={{marginTop:'3px'}}>{list.link}</li>))}</ul>
+  <ul style={{listStyleType:'none', padding:'0px', margin:'0px', color:'gray'}}>{Support.map((list)=>(<li style={{marginTop:'3px', cursor:'pointer'}}>{list.link}</li>))}</ul>
 </div>
 
 </div>
