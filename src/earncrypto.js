@@ -187,7 +187,7 @@ const Earncrypto = () => {
                         <img alt="" src={pros.image} style={{width:'85px', height:'85px', justifySelf:'center'}}></img>
                         <div style={{display:'flex', flexDirection:'column', padding:'20px', textAlign:'center', width:'100%'}}>
                             <h3 style={{ padding:'10px'}}>{pros.header}</h3>
-                            <p style={{position:'relative',backgroundColor:'red', color:'gray', fontSize:'15px', minHeight:'fit-content'}}>{pros.subheader}</p>
+                            <p style={{position:'relative', color:'gray', fontSize:'15px', minHeight:'fit-content'}}>{pros.subheader}</p>
                             <a href={pros.link} style={{position:'relative', justifySelf:'center', color:'blue', cursor:'pointer'}}>{pros.link}</a>
                         </div>
                     </div>
