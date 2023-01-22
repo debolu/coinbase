@@ -185,10 +185,10 @@ const Earncrypto = () => {
                 {coinbasepros2.map((pros)=>(
                     <div style={{display:'flex', flexDirection:'column', width:'100%', justifyItems:'center', marginTop:'10px', alignItems:'center'}}>
                         <img alt="" src={pros.image} style={{width:'85px', height:'85px', justifySelf:'center'}}></img>
-                        <div style={{padding:'20px', textAlign:'center', width:'100%'}}>
+                        <div style={{display:'flex', flexDirection:'column', padding:'20px', textAlign:'center', width:'100%'}}>
                             <h3 style={{ padding:'10px'}}>{pros.header}</h3>
-                            <p style={{color:'gray', fontSize:'15px', height:'100px'}}>{pros.subheader}</p>
-                            <a href={pros.link} style={{justifySelf:'center', color:'blue', cursor:'pointer'}}>{pros.link}</a>
+                            <p style={{position:'relative',backgroundColor:'red', color:'gray', fontSize:'15px', minHeight:'fit-content'}}>{pros.subheader}</p>
+                            <a href={pros.link} style={{position:'relative', justifySelf:'center', color:'blue', cursor:'pointer'}}>{pros.link}</a>
                         </div>
                     </div>
                 ))}

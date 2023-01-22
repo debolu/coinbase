@@ -14,7 +14,7 @@ const Nav = [
 const header = () => {
   return (
     <div>
-      <header style={{position:'fixed', top:'0px', zIndex:'1', backgroundColor:'white', display: "inline-flex", paddingTop: "10px", boxShadow:'1px 1px 5px 3px rgb(245, 245, 245)', width:'100%'}}>
+      <header style={{position:'fixed', top:'0px', zIndex:'2', backgroundColor:'white', display: "inline-flex", paddingTop: "10px", boxShadow:'1px 1px 5px 3px rgb(245, 245, 245)', width:'100%'}}>
         <div id="logo-Wrapper" style={{ width: "150px", marginRight: "10px" }}>
           <img
             src={Logo}
